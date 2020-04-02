@@ -1,11 +1,11 @@
 language: java
 jdk:
-  - oraclejdk8
+  - openjdk8
 sudo: enabled
 services:
   - mysql
 before_install:
-  - mysql -e 'DROP DATABASE IF EXISTS bug;'
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS bug;'
-  - mysql < "bug_db.sql"
+  - sudo mysql -e 'DROP DATABASE IF EXISTS bug;'
+  - sudo mysql -e 'CREATE DATABASE IF NOT EXISTS bug;'
+  - sudo mysql < "bug_db.sql"
 script: mvn clean verify
