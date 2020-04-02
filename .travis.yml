@@ -1,6 +1,7 @@
 language: java
 jdk:
   - openjdk8
+  - oraclejdk8
 sudo: enabled
 services:
   - mysql
@@ -10,4 +11,4 @@ before_install:
   - sudo mysql < "bug_db.sql"
 script: 
     - mvn clean verify
-    - ./gradlew test
+    - ant test
