@@ -15,7 +15,7 @@ public class Main {
         p.getProducts();
 
         Bug b = new Bug();
-        b.addBug(3,2,"this is a test bug2");
+        //b.addBug(3,2,"this is a test bug2");
         b.getBugs();
     }
 }

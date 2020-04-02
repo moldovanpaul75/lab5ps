@@ -26,13 +26,13 @@ class ProductTest {
     @Test
     public void testUpdateProduct(){
         Product p = new Product();
-        Assert.assertEquals(p.updateProduct(1, "test product", "test product"), true);
+        Assert.assertEquals(p.updateProduct(1, "product1", "product1"), true);
     }
 
     @Test
     public void testDeleteProduct(){
         Product p = new Product();
-        Assert.assertEquals(p.deleteProduct(1), true);
+        Assert.assertEquals(p.deleteProduct(3), true);
     }
 
 
