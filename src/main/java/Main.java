@@ -9,12 +9,13 @@ public class Main {
 
 
         Product p = new Product();
-        p.addProduct("product3", "product3");
-        p.deleteProduct(2);
-        p.updateProduct(1, "product45", "this is product 45");
+        //p.addProduct("product3", "product3");
+        //p.deleteProduct(2);
+        //p.updateProduct(1, "product45", "this is product 45");
         p.getProducts();
 
         Bug b = new Bug();
+        b.addBug(3,2,"this is a test bug2");
         b.getBugs();
     }
 }
