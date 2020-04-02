@@ -9,4 +9,3 @@ before_install:
   - sudo mysql -e 'CREATE DATABASE IF NOT EXISTS bug;'
   - sudo mysql < "bug_db.sql"
 script: mvn clean verify
-    - ant test
