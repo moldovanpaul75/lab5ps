@@ -5,7 +5,7 @@ sudo: enabled
 services:
   - mysql
 before_install:
-  - sudo mysql -e 'DROP DATABASE IF EXISTS bug;'
-  - sudo mysql -e 'CREATE DATABASE IF NOT EXISTS bug;'
-  - sudo mysql < "bug_db.sql"
+  - mysql -e 'DROP DATABASE IF EXISTS bug;'
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS bug;'
+  - mysql < "bug_db.sql"
 script: mvn clean verify
